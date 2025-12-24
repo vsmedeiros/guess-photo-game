@@ -219,6 +219,129 @@
                 gap: 10px;
             }
         }
+
+        /* Mobile Landscape Optimization */
+        @media screen and (max-height: 500px) and (orientation: landscape) {
+            body {
+                padding: 10px;
+                align-items: flex-start;
+                overflow-y: auto;
+            }
+
+            .container {
+                padding: 15px;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+
+            h1 {
+                font-size: 1.5em;
+                margin-bottom: 15px;
+            }
+
+            .upload-section p {
+                font-size: 14px;
+                margin-top: 5px;
+            }
+
+            .upload-btn {
+                padding: 10px 25px;
+                font-size: 16px;
+            }
+
+            .info-bar {
+                flex-direction: row;
+                padding: 10px;
+                margin-bottom: 10px;
+                flex-wrap: wrap;
+            }
+
+            .info-item {
+                flex: 1;
+                min-width: 80px;
+            }
+
+            .info-label {
+                font-size: 11px;
+                margin-bottom: 3px;
+            }
+
+            .info-value {
+                font-size: 18px;
+            }
+
+            .progress-bar {
+                height: 6px;
+                margin-bottom: 10px;
+            }
+
+            .canvas-container {
+                margin-bottom: 15px;
+                max-height: 200px;
+            }
+
+            canvas {
+                max-height: 200px;
+                width: auto;
+                max-width: 100%;
+            }
+
+            .guess-input {
+                padding: 10px;
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+
+            .guess-btn {
+                padding: 10px 20px;
+                font-size: 14px;
+                margin: 3px;
+            }
+
+            .message {
+                margin-top: 10px;
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            .file-input-wrapper {
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Smaller landscape devices */
+        @media screen and (max-height: 400px) and (orientation: landscape) {
+            h1 {
+                font-size: 1.2em;
+                margin-bottom: 10px;
+            }
+
+            .canvas-container {
+                max-height: 150px;
+            }
+
+            canvas {
+                max-height: 150px;
+            }
+
+            .info-bar {
+                padding: 8px;
+                margin-bottom: 8px;
+            }
+
+            .info-label {
+                font-size: 10px;
+            }
+
+            .info-value {
+                font-size: 16px;
+            }
+
+            .guess-btn {
+                padding: 8px 16px;
+                font-size: 13px;
+            }
+        }
     </style>
 </head>
 <body>
